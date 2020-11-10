@@ -1,6 +1,6 @@
-# OrderBook
+# OrderBook (Project instructions is attached in a word doc called "OrderBookInstructions.doc")
 
-This is a coding project dealing with complicated logic and the algorithm for when trades should occur in stock market. Project instructions is attached in a word doc.  My main code is the two files App.java and Order.java under the src\main\java\com\app folder.  And the tester file is called BasicAppTest.java under the src\test\java\com\app folder. The test cases are under src\test\resources folder.  Works 100%
+This is a coding project dealing with complicated logic and the algorithm for when trades should occur in stock market.  My main code is the two files **App.java** and **Order.java** under the **src\main\java\com\app folder**.  And the tester file is called BasicAppTest.java under the **src\test\java\com\app folder**. The test cases are under **src\test\resources folder**.  The code passed all test cases and works completely correctly
 
 
 Instructions (brief):
@@ -28,7 +28,7 @@ Implementation
 Your job is to implement an order book that can manage the life cycle of orders. Orders can either be inserted or cancelled. An order that is inserted can update the BBO, and possibly generate trades depending on the price of the order. An order that is cancelled can possibly update the BBO, again depending on the price of the order. Once an order is inserted, the outstanding size of the order can change if it is partially fulfilled. If an order that was previously inserted is completely fulfilled, it is removed from the order book.
 You will read insert or cancel requests from a CSV file and apply them to your order book using your matching algorithm, described below.
 
-#Matching Algorithm
+# Matching Algorithm
 An order-book's matching algorithm is responsible for generating trades when an incoming order's price locks or crosses the opposing side of the order book. For example, if the incoming order is to buy 100 shares at $1.00, then the order book will first check if there is an existing sell order with a price less-than-or-equal to $1.00. If there is, then a trade should be generated between the buyer and seller. If not, it will add the buy order to the list of existing bids yet to be fulfilled. When you insert an order, you must ensure that your order book does not become locked or crossed. A locked or crossed order book is where the best-bid price ≥ best-ask price. That should never happen because at least one of the crossing orders should have been fulfilled. A locked or crossed book should never happen if the matching algorithm is working correctly.
 Orders can also be partially filled and fulfilled at different prices. For example, consider a bid for 10 shares at $10 with the following three asks already in the order book: (a) 2 shares at $8, (b) 3 shares at $8, and (c) 2 shares at $9. Then, three trades would be generated: (a) 2 shares at $8, (b) 3 shares at $8, and (c) 2 shares at $9. In this case, the bid would have 3 shares remaining at $10. It will then be placed on the bid side of the order book for the remaining 3 shares at $10.
 
