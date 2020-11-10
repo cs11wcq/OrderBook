@@ -1,7 +1,9 @@
 # OrderBook
 
-coding project dealing with complicated logic and algorithm for when trades should occur in stock market. Project instructions is attached in a word doc
+This is a coding project dealing with complicated logic and the algorithm for when trades should occur in stock market. Project instructions is attached in a word doc.  My main code is the two files App.java and Order.java under the src\main\java\com\app folder.  And the tester file is called BasicAppTest.java under the src\test\java\com\app folder. The test cases are under src\test\resources folder.  Works 100%
 
+
+Instructions (brief):
 In this project, you will implement one of the foundational pieces that drive capital markets. Billions of dollars worth of assets are traded on exchanges worldwide daily. Most of those exchanges operate an order book for each instrument that can be traded.
 This project is more than just implementing a single function where we test correctness. You will first need to synthesize a possibly foreign subject matter (how order books work), then craft a design based on the description provided, and finally ensure correctness.
 We will test for correctness in this project via automated test cases. Inputs are fed into your program via CSV files. Your program will need to generate the correct CSV outputs.
