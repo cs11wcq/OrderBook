@@ -1,0 +1,8 @@
+timestamp,action,order_id,side,price,size
+1602556619,insert,887,buy,120,50
+1602556609,insert,888,buy,125,50
+1602556611,insert,996,sell,150,25
+1602556611,insert,997,sell,200,50
+1602556615,insert,998,sell,200,50
+1602556616,insert,999,sell,200,50
+1602556617,insert,1000,buy,200,100
