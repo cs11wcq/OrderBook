@@ -1,5 +1,5 @@
 # OrderBook 
-(Note:Project instructions is attached in a word doc called "OrderBookInstructions.doc")
+(Note: Project instructions is attached in a word doc called "OrderBookInstructions.doc")
 
 This is a coding project dealing with complicated logic and the algorithm for when trades should occur in stock market.  My main code is the two files **App.java** and **Order.java** under the **src\main\java\com\app folder**.  And the tester file is called BasicAppTest.java under the **src\test\java\com\app folder**. The test cases are under **src\test\resources folder**.  The code passed all test cases and works completely correctly
 
